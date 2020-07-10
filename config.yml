@@ -1,0 +1,19 @@
+title: The training of a Havanese puppy
+description: >-
+  Training the Havanese Puppy will encompass all aspects of training.  Paper
+  training to teach the dog to use the paper pad to urinate and also feces on
+  the pad.  Letting the dog know you are the master and they are the student.  
+template:
+  repo: the-training-of-a-havanese-puppy-template
+  name: the-training-of-a-havanese-puppy
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
